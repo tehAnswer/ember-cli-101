@@ -21,7 +21,7 @@ export default Ember.Controller.extend({
 					_this.transitionToRoute('friends.show', friend);
 				});
 			} else {
-				this.set('errorMessage', 'Fill the fields omfg.')
+				this.set('errorMessage', 'Fill the fields omfg.');
 			}
 		}
 	}
