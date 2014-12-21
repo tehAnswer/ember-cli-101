@@ -6,10 +6,12 @@ export default Ember.Controller.extend({
 	}),
 	actions: {
     save: function() {
-    	 if(this.get('isValid'))
-    	 	return true;
-    	 else
-    	 	this.set('errorMessage', 'Fill the description omfg.');
-    }
-	}
+    	 if(this.get('isValid')) {
+            return true;
+         }	
+    	 else {
+            this.set('errorMessage', 'Fill the description omfg.');
+         }	
+     }
+  }
 });
